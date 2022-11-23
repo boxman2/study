@@ -1,0 +1,29 @@
+.center_box {
+    border-radius: 20px;
+    text-align: center;
+}
+body {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: beige;
+    color: grey;
+}
+
+.button-style{
+    height: 50px;
+    width: 80px;
+    margin-top: 5px;
+    border-radius: 50px;
+    font-size: 15pt;
+    background-color: transparent;
+    color: grey;
+    border-radius: 50px;
+    border: 1px solid white;
+}
+.button-style:hover {
+    border: 2px solid white;
+}

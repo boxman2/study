@@ -1,0 +1,28 @@
+<script>
+  class Square {
+    #length //클래스를 더 안전하게
+    constructor(length){
+      if(length<0){
+       throw '한변의 길이는 음수일수 없습니다' 
+      }
+      this.#length= length
+      this.name = 'square'
+    }
+    get area (){
+      return this.#length*this.#length
+    }
+    get perimeter(){
+      return this.#length*4
+    }
+    set length(length){
+      if(length<0){throw '한변의 길이는 양수여야합니다'}
+      this.#length= length
+    }
+    get length(){
+      return this.#length
+    }
+  }
+  const square = new Square (29)
+  console.log(square.length)
+  console.log(square.area)
+</script>

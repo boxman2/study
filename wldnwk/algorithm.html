@@ -1,0 +1,19 @@
+<script>
+  function isRequired (속성이름){
+        throw `${속성이름}이 문제가 있습니다`
+  }
+  function 매일보내기 ({수신인=isRequired('수신인'),발신인=isRequired('발신인'),내용=isRequired('내용')}){
+    isRequired(수신인)
+    isRequired(발신인)
+    isRequired(내용)
+    console.log(수신인)
+    console.log(발신인)
+    console.log(내용)
+  }
+매일보내기 ({
+    수신인 : '태현',
+    발신인 : '백지',
+    내욤 : 'ㅁㅁㅁ'
+})
+
+</script>
